@@ -36,10 +36,8 @@ resource "aws_iam_policy" "IamPolicy" {
 			{
 				Action = [
 					"ssm:UpdateInstanceInformation",
-					"ssmmessages:CreateControlChannel",
-					"ssmmessages:CreateDataChannel",
-					"ssmmessages:OpenControlChannel",
-					"ssmmessages:OpenDataChannel"
+					"ssmmessages:*",
+					"ec2messages:*"
 				]
 				Effect = "Allow",
 				Resource = "*"
