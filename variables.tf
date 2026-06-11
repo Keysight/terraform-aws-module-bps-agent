@@ -1,5 +1,5 @@
 variable "AmiName" {
-	default = "Ixia_BreakingPoint_Virtual_Blade_26.0.10.25-prod-cl7jzjvfgu32i"
+	default = "Ixia_BreakingPoint_Virtual_Blade_26.1.20.1-prod-cl7jzjvfgu32i"
 	description = "AMI name used for deploying instances"
 	type = string
 }
@@ -129,7 +129,7 @@ variable "UserProjectTag" {
 }
 
 variable "Version" {
-	default = "26.0.0"
+	default = "26.1.0"
 	description = "Versioning of the application using the deployment"
 	type = string
 }
