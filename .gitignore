@@ -1,4 +1,2 @@
-**/.terraform
-*.tfstate*
+**/.terragrunt-cache
 *.lock.hcl
-terraform.auto.tfvars
