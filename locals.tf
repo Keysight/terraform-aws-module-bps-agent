@@ -34,5 +34,13 @@ locals {
 	UserLoginTag = var.UserLoginTag
 	UserProjectTag = var.UserProjectTag
 	Version = var.Version
-	init_cli = var.init_cli
+	init_cli = var.init_cli != null ? var.init_cli : local.default_init_cli
+}
+
+locals {
+	default_init_cli = base64gzip(<<-EOF
+#!/bin/bash -xe
+systemctl status amazon-ssm-agent
+    EOF
+	)
 }

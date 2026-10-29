@@ -135,9 +135,6 @@ variable "Version" {
 }
 
 variable "init_cli" {
-	default = <<-EOF
-#!/bin/bash -xe
-systemctl status amazon-ssm-agent
-    EOF
+	default = null
 	type = string
 }
