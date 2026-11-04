@@ -26,6 +26,7 @@ output "Eth1" {
 	description = "Ethernet resource associated with the second network interface."
 	value = {
 		"id" : aws_network_interface.Eth1.id
+		"private_ips" : aws_network_interface.Eth1.private_ips
 	}
 }
 
@@ -33,6 +34,7 @@ output "Eth2" {
 	description = "Ethernet resource associated with the third network interface."
 	value = {
 		"id" : aws_network_interface.Eth2.id
+		"private_ips" : aws_network_interface.Eth1.private_ips
 	}
 }
 
